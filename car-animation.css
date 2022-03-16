@@ -1,0 +1,100 @@
+
+body{
+    /* margin: 0; */
+    margin-top: 0;
+    overflow: hidden;
+    border-style: 10px groove green;
+    /* border-style: 10px groove green; */
+} 
+.container{
+    background-image: url("./sky.jpeg");
+    height: 40rem;
+}
+.container h1{
+    position: absolute;
+    font-size: 3rem;
+    top: 22px;
+    left: 25rem;
+}
+.car{
+    height: 12rem;
+}
+.sun{
+    height: 7rem;
+    position: absolute;
+    right: 0px;
+    top: 8rem;
+    animation-name: movement;
+    animation-duration: 120s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.flag{
+    height: 4rem;
+    position: relative;
+    right: 17rem;
+    bottom: 7rem;
+}
+.background{
+    animation-name: movement;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.wheel1{
+    position: relative;
+    right: 8.75rem;
+    bottom: 0.5rem;
+    height: 5rem;
+    animation-name: wheel;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.wheel2{
+    position: relative;
+    right: 31.7rem;
+    bottom: 0.5rem;
+    height: 5rem;
+    animation-name: wheel;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.road{
+    height: 20rem;
+    width: 400%;
+    background-image: url(./road.jpg);
+    background-repeat: repeat-x;
+    position:relative;
+    top:260px
+}
+.buildings{
+    background-image: url(./city.png);
+    background-repeat: repeat-x;
+    height: 17rem;
+    width: 400%;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+}
+.car-container{
+    margin-left: 30rem;
+    z-index: 1;
+    position: relative;
+    top: 30rem;
+ }
+ @keyframes wheel{
+    from{
+        transform: rotate(10deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes movement{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-4000px);
+    }
+}

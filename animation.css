@@ -1,0 +1,160 @@
+body{
+    margin: 0px;
+    background-color:yellow;
+}
+.con{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    
+}
+.anime1{
+  width:100px;
+  height:100px;
+  background-color:rgb(23, 58, 23);
+  margin-left:50px;
+  display:inline-block;
+  margin:30px;
+}
+.skew1{ 
+    animation-name: abi;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.skew2{
+    animation-name: abi;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.skew3{
+    animation-name: abi;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.stretch1{
+    background-color:grey;
+    animation-name: abi1;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.stretch2{
+    background-color:grey;
+    animation-name: abi1;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.stretch3{
+    background-color:grey;
+    animation-name: abi1;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.rotate1{
+    animation-name: abi2;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+.rotate2{
+    animation-name: abi2;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+.rotate3{
+    animation-name: abi2;
+    animation-iteration-count: infinite; 
+    animation-duration: 2s;
+}
+.compress{
+    animation-name: abi3;
+    animation-iteration-count: infinite; 
+    animation-duration: 4s;
+}
+.expand{
+    background-color:red;
+    animation-name: abi4;
+    animation-iteration-count: infinite; 
+    animation-duration: 2s;
+}
+.c{
+    background-color:green;
+    animation-name: abi5;
+    animation-iteration-count: infinite; 
+    animation-duration: 2s; 
+    animation-direction: alternate-reverse;
+}
+@keyframes abi5{
+    from{
+        transform: rotate(-10deg);
+    }
+    to{
+        transform: rotate(90deg);
+    }
+}
+@keyframes abi4{
+    from{
+        transform: scale();
+    }
+    to{
+        transform: scaleX(0.4);
+    }
+}
+@keyframes abi3{
+    from{
+        transform: scale();
+    }
+    to{
+        transform: scaleY(0.5);
+    }
+}
+@keyframes abi2{
+    from{
+        transform: rotate(180deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes abi1{
+    0%{
+        transform: skewY(20deg);
+    }
+    50%{
+        transform: skewY(-20deg);
+    }
+    100%{
+        transform: skewY(20deg);
+    }
+}
+
+@keyframes abi{
+    0%{
+        transform: skewX(20deg);
+    }
+    50%{
+        transform: skewX(-20deg);
+    }
+    100%{
+        transform: skewX(20deg);
+    }
+}
+a{
+    display: block;
+    width: 50%;
+    margin: auto;
+    font-size: 2.5rem;
+    text-align: center;
+}
+a:hover{
+    text-decoration: none;
+
+}
+/*============================================================= css for hover elements=============================================================================== */
+
